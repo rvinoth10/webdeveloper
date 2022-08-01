@@ -1,0 +1,189 @@
+@media (max-width:576px) {
+    .jumbotron {
+        display: none;
+    }
+    /* ******************** NAVBAR START**************************** */
+    #navbar .navbar {
+        margin: 0;
+        padding: 0 0 0 1rem;
+        justify-content: space-between;
+    }
+    .navbar-brand {
+        display: block;
+    }
+    #navbar .navbar .offcanvas button {
+        border-radius: 50%;
+        background-color: violet;
+    }
+    #navbar .navbar ul li {
+        margin: 0;
+        padding: 0;
+        justify-content: start;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid rgba(211, 211, 211, 0.237);
+    }
+    #navbar .navbar ul li ul li {
+        border-bottom: none;
+    }
+    #navbar .navbar ul li ul li a {
+        border-bottom: 1px solid rgba(211, 211, 211, 0.088);
+    }
+    #navbar .navbar ul li:focus-within ul {
+        display: block;
+        text-align: center;
+    }
+    #navbar .navbar button span {
+        color: white;
+        font-size: 1.5rem;
+    }
+    #navbar .navbar .navbar-brand {
+        font-size: 2rem;
+        color: white;
+    }
+    #navbar .navbar .navbar-brand span {
+        color: rgb(255, 0, 255);
+    }
+    #navbar .navbar .navbar-brand:hover {
+        text-shadow: 0 0 10px violet;
+        cursor: pointer;
+    }
+    /* ********************* CAROUSEL START ****************************** */
+    .selection_top {
+        background: url(./images/bg1.jpg) no-repeat center;
+        background-size: cover;
+        height: 300px;
+    }
+    .selection_top .content {
+        left: 25%;
+    }
+    .selection_top .content h1 {
+        font-size: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+    .selection_top .content .btn {
+        font-size: 13px;
+    }
+    .selection_top .content .btn:hover {
+        font-size: 14px;
+        transition: all 0.5s ease;
+    }
+    /* ************** ABOUT START ************************************* */
+    #about .about-img {
+        display: none;
+    }
+    #about {
+        max-width: 560px;
+    }
+    #about .about-content {
+        width: 460px;
+        justify-content: space-evenly;
+    }
+    #about .about-content h1 {
+        font-size: 2.5rem;
+    }
+    #about .about-content h5 {
+        color: black;
+        margin: 0;
+    }
+    #about .about-content p {
+        padding-top: 1rem;
+        font-size: .8rem;
+    }
+    /* ************************** CATEGORY ****************************************** */
+    #category .card-wraper {
+        display: block;
+    }
+    #category .carousel-item {
+        justify-items: center;
+        margin: 20%;
+    }
+    #category .card {
+        width: 300px;
+        height: 302px;
+    }
+    #category .card a {
+        text-decoration: none;
+    }
+    #category .card img,
+    #category .card .card-img-overlay {
+        transition: all 0.5s ease-in-out;
+        cursor: pointer;
+    }
+    #category .card:hover img {
+        transform: scale(1.2);
+    }
+    #category .card .card-footer {
+        margin-top: 230px;
+        justify-content: center;
+        max-width: 100%;
+        background-color: #ffc1ff;
+    }
+    #category #carousel-2 .card img {
+        width: auto;
+        height: 303px;
+        position: absolute;
+    }
+    /* *********************  TRENDING PRODUCT START ********************************* */
+    #trending-product .row .box .card-top-img img {
+        width: 350px;
+        height: auto;
+    }
+    #trending-product .row .box {
+        margin-top: 350px;
+    }
+    #trending-product .row .box .card .card-title {
+        margin-top: 100px;
+    }
+    /* ********************** EXPERT START *********************************************** */
+    #experts .grid {
+        display: block;
+        margin: 0;
+        padding: 25%;
+    }
+    #experts .content {
+        margin-top: 5rem;
+        width: 450px;
+    }
+    #experts .content h1 {
+        font-size: 2.5rem;
+    }
+    /* **************************** FOOTER START ******************************************* */
+    #footer .row {
+        display: block;
+    }
+    #footer .footer {
+        display: block;
+    }
+    #footer .row .details {
+        display: block;
+    }
+    #footer .row .details .d-1,
+    #footer .row .details .d-2,
+    #footer .row .details .d-3 {
+        margin: 2rem 0rem;
+        text-align: center;
+    }
+    #footer .footer-logo {
+        text-align: center;
+        justify-content: center;
+    }
+    #footer .footer-logo img {
+        width: 200px;
+    }
+    #footer .footer-logo h4 {
+        font-weight: 600;
+        margin: 1rem 0;
+    }
+    #footer .footer-logo form {
+        display: block;
+        padding: 0 20%;
+    }
+    #footer .footer-logo form input {
+        height: 60px;
+        width: 300px;
+    }
+    #footer .footer-logo form .btn {
+        margin-top: 1rem;
+    }
+}

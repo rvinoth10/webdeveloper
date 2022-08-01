@@ -1,0 +1,953 @@
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+    * {
+        margin: 0px;
+        padding: 0px;
+        transition: .3s;
+        box-sizing: border-box;
+    }
+    
+     ::-webkit-scrollbar {
+        width: 5px;
+    }
+    
+     ::-webkit-scrollbar-track {
+        background-color: rgba(158, 157, 157, 0.464);
+    }
+    
+     ::-webkit-scrollbar-thumb {
+        background-color: rgb(255, 0, 230);
+        border-radius: 30px;
+    }
+    
+     ::-webkit-scrollbar {
+        width: 5px;
+    }
+    
+     ::-webkit-scrollbar-track {
+        background-color: rgba(158, 157, 157, 0.464);
+    }
+    
+     ::-webkit-scrollbar-thumb {
+        background-color: rgb(255, 0, 230);
+        border-radius: 30px;
+    }
+    
+    #loader {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #fff url(./images/Bars-1s-200px\ loader.gif) no-repeat center;
+        z-index: 99999;
+    }
+    /* ******************************************* JUMBOTRON START ************************************************** */
+    
+    .jumbotron a i {
+        text-decoration: none;
+        color: black;
+        font-size: 1.5rem;
+        background-color: rgb(245, 245, 245);
+        border: 1px solid rgb(246, 246, 246);
+        padding: 1rem;
+    }
+    
+    .jumbotron a :hover {
+        background-color: rgb(240, 240, 240);
+    }
+    
+    .jumbotron a i span:hover {
+        background-color: rgb(17, 16, 16);
+    }
+    
+    .jumbotron a i span {
+        font-size: .7rem;
+        position: absolute;
+        margin-top: -1rem;
+        background-color: violet;
+        padding: .3rem .4rem;
+    }
+    /* ******************************************** JUMBOTRON END *********************************************/
+    /* ************************************** NAVBAR START  ****************************************** */
+    
+    #navbar .navbar {
+        margin: 0;
+        padding: 0;
+    }
+    
+    #navbar .navbar .navbar-nav {
+        justify-content: center;
+    }
+    
+    #navbar .navbar button span {
+        color: white;
+    }
+    
+    #navbar .navbar i {
+        display: none;
+    }
+    
+    #navbar .navbar ul li a {
+        text-decoration: none;
+        color: white;
+        padding: 1rem;
+    }
+    
+    #navbar .navbar ul li ul {
+        padding: 0;
+    }
+    
+    #navbar .navbar ul li ul li {
+        text-decoration: none;
+        color: white;
+        background-color: black;
+        padding: 0rem;
+        transition: all .5s ease-in-out;
+    }
+    
+    #navbar .navbar ul li :hover {
+        background-color: violet;
+        transition: .3s;
+    }
+    
+    #navbar .navbar ul li ul li a :hover {
+        background-color: violet;
+        transition: .3s;
+    }
+    
+    .navbar ul li:hover ul {
+        display: block;
+        text-align: center;
+    }
+    
+    #navbar .navbar ul li :active {
+        background-color: rgb(245, 31, 174);
+        transition: .3s;
+    }
+    
+    #navbar .navbar ul li :focus-within {
+        background-color: rgb(245, 31, 174);
+        transition: .3s;
+    }
+    
+    #signin .modal-body button:hover {
+        background-color: gray;
+    }
+    
+    #signin .modal-body button:active {
+        background-color: rgb(33, 33, 33);
+    }
+    
+    #signin .modal-body span {
+        font-size: .9rem;
+    }
+    
+    #signin .modal-body span a {
+        text-decoration: none;
+        color: #f95ff9;
+    }
+    
+    #signin .modal-body span a:hover {
+        color: rgb(245, 31, 174);
+    }
+    
+    .modal .modal-header span {
+        color: rgb(245, 31, 174);
+    }
+    
+    #signup form input {
+        background-color: rgb(250, 250, 250);
+    }
+    
+    #signup img {
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        filter: blur(50px);
+    }
+    
+    #signup form,
+    #signup button,
+    #signup .title,
+    #signup p {
+        position: relative;
+    }
+    
+    .navbar-brand {
+        display: none;
+    }
+    /* ************************************** NAVBAR END ****************************************** */
+    /*********************************************** */
+    
+    .selection_top {
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+        background: url(./images/bg1.jpg) no-repeat center;
+        background-size: cover;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        animation: change 20s infinite ease-in-out;
+    }
+    
+    .selection_top .content {
+        position: absolute;
+        align-items: center;
+        top: 25%;
+        left: 10%;
+    }
+    
+    .selection_top .content h1 {
+        font-size: 100px;
+    }
+    
+    .selection_top .content .btn {
+        font-size: 30px;
+        background-color: #ff99ff;
+        padding: .1rem 2rem;
+        margin-top: 1rem;
+        animation: read 20s infinite ease-in-out;
+        font-weight: 700;
+    }
+    
+    .selection_top .content .btn:hover {
+        font-size: 32px;
+        transition: all 0.5s ease;
+        box-shadow: 0 0 10px rgb(204, 202, 204);
+    }
+    
+    @keyframes change {
+        0% {
+            background-image: url(./images/bg1.jpg);
+            color: white;
+        }
+        30% {
+            background-image: url(./images/bg2.jpg);
+            color: rgb(0, 255, 38);
+        }
+        60% {
+            background-image: url(./images/bg3.jpg);
+            color: rgb(255, 0, 247);
+        }
+        80% {
+            background-image: url(./images/bg4.jpg);
+            color: rgb(2, 234, 255);
+        }
+        100% {
+            background-image: url(./images/bg1.jpg);
+            color: red;
+        }
+        80% {
+            background-image: url(./images/bg2.jpg);
+        }
+        60% {
+            background-image: url(./images/bg3.jpg);
+        }
+        30% {
+            background-image: url(./images/bg4.jpg);
+        }
+    }
+    
+    @keyframes read {
+        0% {
+            color: white;
+            background-color: rgb(0, 255, 38);
+        }
+        30% {
+            color: rgb(0, 255, 38);
+            background-color: rgb(255, 0, 247);
+        }
+        60% {
+            color: rgb(255, 0, 247);
+            background-color: rgb(2, 234, 255);
+        }
+        80% {
+            color: rgb(2, 234, 255);
+        }
+        100% {
+            color: red;
+            background-color: white;
+        }
+    }
+    /* ************************************** CUSTOMER SUPPORT START  ****************************************** */
+    
+    #cus-support .row .card .d-flex img {
+        width: 80px;
+        height: 80px;
+        margin: 1rem .5rem 0 0;
+        padding: .7rem;
+        background-color: rgb(248, 96, 197);
+    }
+    /* ************************************** CUSTOMER SUPPORT END  ****************************************** */
+    /* ************************************** SELECTION ABOUT START  ****************************************** */
+    
+    .title {
+        color: #f95ff9;
+        padding: 1.5rem 0 1rem 0;
+        margin: 2rem;
+        margin-top: 4rem;
+    }
+    
+    .title span {
+        color: rgb(0, 0, 0);
+    }
+    
+    p {
+        color: lightslategray;
+    }
+    
+    #about .row {
+        display: inline-flex !important;
+    }
+    
+    #about .about-img {
+        margin-left: 5rem;
+        width: 600px;
+    }
+    
+    #about .about-img img {
+        box-shadow: 3px 3px 20px 1px rgb(255, 167, 226);
+    }
+    
+    #about .about-img .img2 {
+        position: absolute;
+        width: 230px;
+        height: 180px;
+        box-shadow: 1rem 2rem rgb(245, 145, 211);
+    }
+    
+    #about .about-img .img1 {
+        margin: 9rem 0 0 12rem;
+        position: absolute;
+        width: 250px;
+        height: 250px;
+    }
+    
+    #about .about-img .img3 {
+        margin: 18rem 0 0 1rem;
+        width: 200px;
+        height: 150px;
+    }
+    
+    #about .about-content {
+        padding: 1rem 0 0 0rem;
+        width: 600px;
+    }
+    
+    #about .about-content h1 span {
+        color: rgb(238, 132, 203);
+    }
+    
+    #about .about-content h1 {
+        font-size: 3rem;
+    }
+    
+    #about .about-content h5 {
+        color: black;
+        margin: 0;
+    }
+    
+    #about .about-content p {
+        padding-top: 1rem;
+        font-size: .8rem;
+    }
+    
+    #about .about-content .box {
+        text-align: center;
+    }
+    
+    #about .about-content .box p {
+        padding: 0;
+    }
+    
+    #about .about-content .box .count {
+        color: violet;
+        font-weight: bold;
+        font-size: 4rem;
+    }
+    
+    #about .read a {
+        margin-top: 4;
+        padding: 1rem 2rem;
+        background-color: rgb(243, 129, 205);
+    }
+    
+    #about .read :hover {
+        background-color: rgb(245, 31, 174);
+        transition: .3s;
+        box-shadow: 0 0 10px rgb(18, 18, 18);
+    }
+    /* ************************************** SELECTION ABOUT END  ****************************************** */
+    /* ************************************** SELECTION CATEGORY START  ****************************************** */
+    
+    #category .card-wraper {
+        display: flex;
+    }
+    
+    #category .card {
+        width: calc(100%/4);
+        height: 302px;
+        padding: 0;
+        overflow: hidden;
+        border: 2px solid rgb(237, 235, 235);
+    }
+    
+    #category .card a {
+        text-decoration: none;
+    }
+    
+    #category .card img,
+    #category .card .card-img-overlay {
+        transition: all 0.5s ease-in-out;
+        cursor: pointer;
+    }
+    
+    #category .card:hover img {
+        transform: scale(1.2);
+    }
+    
+    #category .card .card-footer {
+        margin-top: 230px;
+        justify-content: center;
+        max-width: 100%;
+        background-color: #ffc1ff;
+    }
+    
+    #category #carousel-2 .card img {
+        width: auto;
+        height: 303px;
+        position: absolute;
+    }
+    
+    #category .counter-up {
+        margin-top: 8rem;
+        background-image: url(./images/cg-banner.jpg);
+    }
+    
+    #category .counter-up .row {
+        background-color: #1c111c69;
+        color: whitesmoke;
+        justify-content: space-between;
+        padding: 3rem 0;
+        font-weight: 400;
+    }
+    
+    #category .counter-up .row .counter-box .count {
+        font-size: 3rem;
+        font-weight: bolder;
+        margin: 1.5rem;
+    }
+    /* ************************************** SELECTION CATEGORY END  ****************************************** */
+    /* SELECTION PRODUCT START */
+    
+    #products .row .card {
+        width: 253px;
+        height: auto;
+        margin-top: 2rem;
+        padding: 0;
+        overflow: hidden;
+    }
+    
+    #products .row .card a {
+        width: 250px;
+        height: 250px;
+        overflow: hidden;
+    }
+    
+    #products .row .card img {
+        width: 250px;
+        height: 250px;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    #products .row .card:hover img {
+        transform: scale(1.1);
+    }
+    
+    #products .row .card .card-body {
+        padding: 0;
+    }
+    
+    #products .row .card .card-body .stars {
+        color: yellow;
+        margin: .7rem;
+    }
+    
+    #products .row .card .card-body .card-text-1 .text1 {
+        background-color: #f95ff9;
+        text-decoration: none;
+        padding: .3rem 5.2rem;
+        color: white;
+        font-size: .9rem;
+        font-weight: bold;
+        text-decoration: none;
+        margin: .5rem 0;
+    }
+    
+    #products .row .card .card-text-2 .text2 {
+        color: rgb(255, 255, 255);
+        font-size: 2rem;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
+    #products .row .card .card-body .card-text-1 {
+        margin: .4rem 0;
+    }
+    
+    #products .row .card .card-text-2 {
+        width: 250px;
+        height: 250px;
+        padding-top: 5rem;
+    }
+    
+    #products .row .card:hover .card-text-2 {
+        opacity: 1;
+        background-color: rgba(249, 95, 249, 0.402);
+        background-size: cover;
+        transition: all .5s ease;
+    }
+    
+    #products .row .card .card-text-2 {
+        opacity: 0;
+        transition: all .5s ease-in-out;
+        position: absolute;
+    }
+    
+    #products .row .card .card-body .card-text-1 :hover {
+        background-color: rgb(255, 0, 195);
+    }
+    
+    #products .row .card .card-body .card-text-2 :hover {
+        background-color: rgb(234, 233, 233);
+    }
+    /******************************* expert *****************************************/
+    
+    #experts .grid img {
+        width: 155px;
+        height: 140px;
+        margin-top: 3rem;
+        margin-left: 3.5rem;
+    }
+    
+    #experts .grid {
+        display: flex;
+        width: 600px;
+    }
+    
+    #experts .grid .box {
+        margin: .6rem;
+    }
+    
+    #experts .grid .card {
+        width: 300px;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    
+    #experts .grid .box .card {
+        padding: 0;
+        font-size: 1rem;
+        border-style: none;
+        border: 1px solid rgb(238, 237, 237);
+        box-shadow: -5px 20px 30px lightgray;
+        width: 250px;
+    }
+    
+    #experts .grid .card a {
+        margin-top: 2rem;
+        text-decoration: none;
+        color: black;
+    }
+    
+    #experts .grid .card a:hover {
+        color: #f95ff9;
+        transition: 0.2s !important;
+    }
+    
+    #experts .content {
+        margin-top: 8rem;
+        margin-left: 1rem;
+        width: 600px;
+    }
+    
+    #experts .content h1 {
+        font-size: 3rem;
+        font-weight: bolder;
+    }
+    
+    #experts .content .progres span {
+        font-weight: 600;
+        cursor: pointer;
+    }
+    
+    #experts .container-fluid .subscribe {
+        background-color: #f95ff9;
+        box-shadow: 0px 0px 20px gray;
+        padding-bottom: 4rem;
+    }
+    
+    #experts .container-fluid .subscribe .content {
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    
+    #experts .container-fluid .subscribe form {
+        justify-content: center;
+    }
+    
+    #experts .container-fluid .subscribe form input {
+        max-width: 400px;
+        margin-right: 2rem;
+    }
+    
+    #experts .container-fluid .subscribe .content form .btn:hover {
+        box-shadow: 0 0 20px rgb(255, 255, 255);
+    }
+    /* ***************** trending produts start *************************** */
+    
+    #trending-product .row .box .card-top-img img {
+        width: 100%;
+        height: auto;
+        position: relative;
+        margin-top: -950px;
+    }
+    
+    #trending-product .row .box .card-top-img:hover img {
+        transform: translateY(-10px);
+    }
+    
+    #trending-product .row .box {
+        position: relative;
+        margin-top: 300px;
+    }
+    
+    #trending-product .row .box .card {
+        background-color: rgb(249, 249, 249);
+        width: auto;
+        line-height: 30px;
+    }
+    
+    #trending-product .row .box .card .card-title {
+        margin-top: 100px;
+    }
+    
+    #trending-product .row .box .card .price {
+        color: rgb(255, 54, 255);
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    
+    #trending-product .row .box .card .price strike {
+        color: lightgray;
+    }
+    
+    #trending-product .row .box .card .stars {
+        color: yellow;
+    }
+    
+    #trending-product .row .box .card button {
+        background-color: rgb(250, 129, 250);
+        color: white;
+        font-weight: bolder;
+    }
+    
+    #trending-product .row .box .card button:hover {
+        background-color: rgb(248, 28, 248);
+        box-shadow: 0 0 10px rgb(204, 202, 204);
+    }
+    /* ************************ blogs start ************************ */
+    
+    #blogs .card .card-img {
+        overflow: hidden;
+    }
+    
+    #blogs .card .card-img-top:hover {
+        transform: scale(1.1);
+    }
+    
+    #blogs .card .card-name {
+        padding-bottom: 1rem;
+        border-bottom: 1px solid lightgray;
+    }
+    
+    #blogs .card .card-name a h6:hover {
+        color: rgb(248, 28, 248);
+    }
+    
+    #blogs .card .card-name a h6 {
+        margin: .5rem .5rem .5rem 0;
+        font-size: .8rem;
+        color: rgb(130, 129, 129);
+    }
+    
+    #blogs .card .card-name a .name-2 {
+        border-left: 1px solid lightgray;
+        padding-left: .5rem;
+    }
+    
+    #blogs .card .card-body .card-title h4 {
+        padding-top: 1rem;
+        color: black;
+    }
+    
+    #blogs .card .card-body .card-title h4:hover {
+        color: rgb(248, 28, 248);
+    }
+    
+    #blogs .card .card-body button i {
+        margin-left: 10px;
+    }
+    
+    #blogs .card .card-body button:hover {
+        color: rgb(248, 28, 248);
+        box-shadow: 0 0 10px rgb(204, 202, 204);
+    }
+    
+    #blogs .card .card-body button:hover i {
+        color: rgb(248, 28, 248);
+        margin-left: 15px;
+        transition: all .5s;
+    }
+    /* ************************* footer start ************************************** */
+    
+    #footer {
+        margin-top: 5rem;
+        padding-top: 4rem;
+        background-color: rgb(247, 247, 247);
+    }
+    
+    #footer .footer {
+        display: flex;
+    }
+    
+    #footer .row {
+        display: inline-flex;
+    }
+    
+    #footer .row .details {
+        display: inline-flex;
+    }
+    
+    #footer .row .details .d-1,
+    #footer .row .details .d-2,
+    #footer .row .details .d-3 {
+        margin: 0 5rem;
+        margin-right: 0;
+    }
+    
+    #footer .row .details .d-1 {
+        margin-left: 0;
+    }
+    
+    #footer .row .details a h6 {
+        line-height: 2rem !important;
+        color: lightslategray;
+    }
+    
+    #footer .row .details h4 {
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+    }
+    
+    #footer .row .details a {
+        text-decoration: none;
+    }
+    
+    #footer .row .details a h6:hover {
+        color: violet;
+    }
+    
+    #footer .footer-logo h4 {
+        font-weight: 600;
+        margin: 1rem 0;
+    }
+    
+    #footer .footer-logo form {
+        margin: 1rem 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #footer .footer-logo form input {
+        height: 60px;
+        width: 350px;
+    }
+    
+    #footer .footer-logo form .btn {
+        width: 150px;
+        background-color: #ff99ff;
+        margin-left: 1rem;
+        border-radius: 20px;
+    }
+    
+    #footer .footer-logo form .btn:hover {
+        background-color: rgb(249, 74, 249);
+    }
+    
+    #footer .footer-bottom {
+        padding: 2rem 3rem;
+        align-items: center;
+    }
+    
+    #footer .footer-bottom .social-icon i {
+        padding: 1rem;
+        border: 1px solid violet;
+        color: violet;
+        border-radius: 50%;
+    }
+    
+    #footer .footer {
+        border-bottom: 1px solid lightgray;
+        padding-bottom: 2.5rem;
+    }
+    
+    #footer .footer-bottom .social-icon i:hover {
+        background-color: violet;
+        color: white;
+    }
+    
+    #footer .footer-bottom p i {
+        font-size: .8rem;
+    }
+    
+    #footer .footer-bottom p span {
+        font-size: 1.1rem;
+        color: black;
+        font-weight: bolder;
+    }
+    /* **************************************************** About Html ******************************************************************** */
+    /* ******************* about home start *********************** */
+    
+    #html .home {
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+        background: url(./images/ab2.jpg) no-repeat center;
+        background-size: cover;
+    }
+    
+    #html .home .home-page {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        background-color: #0b00344f;
+    }
+    
+    #html .home .content {
+        position: relative;
+        padding-top: 10%;
+        padding-left: 10%;
+        color: rgba(11, 2, 2, 0.641);
+    }
+    
+    #html .home .content h1 {
+        font-size: 100px;
+        font-weight: bolder;
+    }
+    
+    #html .home .content p a {
+        text-decoration: none;
+        font-size: 20px;
+        color: rgb(255, 0, 255);
+        font-weight: 600;
+    }
+    
+    #html .home .content p a:hover {
+        color: rgb(213, 0, 181);
+    }
+    
+    #html .home .content span {
+        color: white;
+    }
+    /* *********************** Welcome Start **************************** */
+    
+    #html .home .contents-1 {
+        background-color: rgb(0, 1, 39);
+    }
+    
+    #html #welcome .row {
+        display: flex;
+        justify-content: space-between;
+        padding: 5rem 0;
+    }
+    
+    #html #welcome .row .content {
+        width: 500px;
+    }
+    
+    #html #welcome .row .content h6 {
+        color: #f95ff9;
+    }
+    
+    #html #welcome .row .content h1 {
+        font-weight: bolder;
+        font-size: 44px;
+        color: white;
+    }
+    
+    #html #welcome .row .content p {
+        line-height: 3rem;
+        font-weight: 500;
+    }
+    
+    #html #welcome .row .content p span {
+        padding-right: 1rem;
+    }
+    
+    #html #welcome .row .content button {
+        background-color: #f95ff9;
+        color: white;
+        padding: 20px 30px;
+        font-size: .8rem;
+        font-weight: bold;
+    }
+    
+    #html #welcome .row .content button:hover {
+        background-color: #c503c5;
+        box-shadow: 0 0 10px rgb(204, 202, 204);
+    }
+    
+    #html #welcome .row .image {
+        width: 600px;
+        height: auto;
+    }
+    
+    #html #welcome .row .image img {
+        width: 550px;
+        height: 470px;
+        box-shadow: 0 0 20px rgb(204, 202, 204);
+    }
+    
+    #html #welcome .contents-2 .row {
+        display: flex;
+    }
+    
+    #html #welcome .contents-2 .row .left-content {
+        width: 50%;
+    }
+    
+    #html #welcome .contents-2 .row .right-content {
+        width: 50%;
+        background-color: #f95ff9;
+    }
+    
+    #html #welcome .contents-2 .row .right-content .counter-box {
+        display: flex;
+        align-items: center;
+        font-size: 50px;
+        color: white;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid lightgray;
+    }
+    
+    #html #welcome .contents-2 .row .right-content .counter-box .count {
+        padding-left: 3rem;
+        font-weight: bolder;
+    }
+    
+    #html #welcome .contents-2 .row .right-content .counter-box

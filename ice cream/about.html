@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ice Cream Shop -About</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+
+</head>
+
+<body onload="myFuction()" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+    <div id="loader"></div>
+
+    <!------------------------------- Jubootron Start -------------------------------------->
+    <div class="jumbotron container">
+        <div class="p-2 align-items-center d-flex justify-content-between">
+            <a data-bs-toggle="offcanvas" href="#menu"><i class=" rounded-circle fa-solid fa-bars"></i></a>
+            <div class="offcanvas offcanvas-end" id="menu">
+                <div class="offcanvas-header">
+                    <div class="offcanvas-title">
+                        <h1>heading</h1>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+            </div>
+            <img src="./images/full logo.jpg" alt="logo" width="130px" height="65px">
+            <a href="#"><i class="rounded-circle fa-solid fa-basket-shopping"><span class=" rounded-circle badge text-white ">5</span></i></a>
+            </span>
+        </div>
+    </div>
+    <!------------------------------- Jubootron End -------------------------------------->
+    <!------------------------------- Navbar Start -------------------------------------->
+    <div id="navbar">
+        <div class="navbar navbar-expand-sm bg-black">
+            <h1 class="navbar-brand">Ice <span>Cream</span></h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#Navbar">
+                <span class="fa fa-bars"></span>
+              </button>
+            <div class="offcanvas offcanvas-start bg-black" id="Navbar">
+                <div class="offcanvas-header">
+                    <h1 class="navbar-brand mx-auto">Ice <span>Cream</span></h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <ul class="navbar-nav ">
+                    <li class="nav-item"><a class="nav-link" href="./index.html">HOME</a></li>
+                    <li class="nav-item page"><a class="nav-link" href="#">PAGES <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu page-item">
+                            <li class="dropdown-item"><a class="nav-link" href="./about.html">ABOUT US</a></li>
+                            <li class="dropdown-item"><a class="nav-link signup" data-bs-toggle="signup" href="signup.html">SIGNUP</a></li>
+                            <li class="dropdown-item"><a class="nav-link signin" data-bs-toggle="signin" href="#">LOGIN</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item shop"><a class="nav-link" href="#">SHOP <i class="fa-solid fa-angle-down"></i></a>
+                        <ul class="dropdown-menu shop-item">
+                            <li class="dropdown-item"><a class="nav-link" href="#">SHOP</a></li>
+                            <li class="dropdown-item"><a class="nav-link" href="#">CART</a></li>
+                            <li class="dropdown-item"><a class="nav-link" href="#">CHECKOUT</a></li>
+                            <li class="dropdown-item"><a class="nav-link" href="#">WHISHLIST</a></li>
+                            <li class="dropdown-item"><a class="nav-link" href="#">PRODUCT DETAILS</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item blog"><a class=" nav-link" href="#">BLOGS <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu blog-item">
+                            <li class="dropdown-item"><a class="nav-link" href="#">BLOG-DETAILS</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="./contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--------------------------------signin option ---------------------->
+
+    <!-- The Modal -->
+    <div class="modal" id="signin">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header navbar-toggler">
+                    <h1 class="modal-title ms-auto">SIGN <span>IN</span></h1>
+                    <button type="button" class="btn-close close"></button>
+                    <button type="button" class="fa fa-subtract close ss " style="display: none;" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form action="index.html" class="was-validated">
+                        <h4>Email</h4>
+                        <div class="form-floating mb-3 mt-3">
+                            <input type="email" class="form-control" id="uname" placeholder="Enter username or email id" name="uname" required>
+                            <label for="uname">Email</label>
+                        </div>
+
+                        <h4>Password</h4>
+                        <div class="form-floating mt-3 mb-3">
+                            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+                            <label for="pwd">Password</label>
+                        </div>
+                        <div class="text-center">
+                            <input type="checkbox" id="check" name="check" required>
+                            <label for="check">Keep me Logged in</label>
+                        </div>
+                        <div class="mt-3 mb-3 text-center">
+                            <button type="submit" class="btn ps-5 pe-5 btn-dark">login</button>
+                        </div>
+                    </form>
+                    <span>Need a New Account? <a href="signup.html">Create an account</a></span><span class="float-end"><a href="#">Forgot Password?</a></span>
+
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn close btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--------------------------------signin option ---------------------->
+
+    <!------------------------------- Navbar End -------------------------------------->
+    <!--------------------------------signin option ---------------------->
+
+    <!-- The Modal -->
+    <div class="modal" id="signin">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h1 class="modal-title ms-auto">SIGN <span>IN</span></h1>
+                    <button type="button" class="btn-close close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form action="index.html" class="was-validated">
+                        <h4>Email</h4>
+                        <div class="form-floating mb-3 mt-3">
+                            <input type="email" class="form-control" id="uname" placeholder="Enter username or email id" name="uname" required>
+                            <label for="uname">Email</label>
+                        </div>
+
+                        <h4>Password</h4>
+                        <div class="form-floating mt-3 mb-3">
+                            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+                            <label for="pwd">Password</label>
+                        </div>
+                        <div class="text-center">
+                            <input type="checkbox" id="check" name="check" required>
+                            <label for="check">Keep me Logged in</label>
+                        </div>
+                        <div class="mt-3 mb-3 text-center">
+                            <button type="submit" class="btn ps-5 pe-5 btn-dark">login</button>
+                        </div>
+                    </form>
+                    <span>Need a New Account? <a href="signup.html">Create an account</a></span><span class="float-end"><a href="#">Forgot Password?</a></span>
+
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn close btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--------------------------------signin option ---------------------->
+
+    <!------------------------------- Home page Start -------------------------------------->
+    <div id="html">
+        <div class="home">
+
+            <div class="home-page">
+                <div class="content">
+                    <h1>About Us</h1>
+                    <p> <a href="./index.html"> Home </a><span> / About Us</span></p>
+                </div>
+            </div>
+        </div>
+        <!------------------------------- Home Page End -------------------------------------->
+
+        <!------------------------------- about welcome start-------------------------------------->
+        <div id="welcome">
+            <div class="contents-1">
+                <div class="container">
+
+                    <div class="row">
+                        <div class="content">
+                            <h6>welcome</h6>
+                            <h1 class="heading">Organic milk Ice Cream & Vegan Sorbet</h1>
+                            <p><span><i class="fa-solid fa-check"></i></span>Strawberry Chunks</p>
+                            <p><span><i class="fa-solid fa-check"></i></span>Black Ice Cream</p>
+                            <p><span><i class="fa-solid fa-check"></i></span>Caramelized Pineapple</p>
+                            <p><span><i class="fa-solid fa-check"></i></span>Muesli & Nuts</p>
+                            <button type="button" class="btn rounded-pill"> <a class="text-decoration-none text-white" href="contact.html">GET A QUOTE</a></button>
+                        </div>
+
+                        <div class="image">
+                            <img class="rounded-3 border-5 border-primary" src="./images/ab1.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contents-2">
+                <div class="container">
+                    <div class="row">
+                        <div class="left-content">
+                            <h1>Why Us</h1>
+                            <p>we make the best ice cream Using organic milk . It began with the pureley functional need for a controlls environment to moderate the effects of climate.</p>
+                        </div>
+                        <div class="right-content p-5">
+                            <div class="counter-box">
+                                <i class="fa-solid fa-user-graduate"></i>
+                                <div class="count">
+                                    <span class="counter">520 </span><span> +</span>
+                                    <h6>Expert & Professional Staff</h6>
+                                </div>
+                            </div>
+                            <div class="counter-box">
+                                <i class="fa-solid fa-ice-cream"></i>
+                                <div class="count">
+                                    <span class="counter">250 </span><span> +</span>
+                                    <h6>Ice Cream varieties</h6>
+                                </div>
+                            </div>
+                            <div class="counter-box">
+                                <i class="fa-solid fa-award"></i>
+                                <div class="count">
+                                    <span class="counter">520 </span><span> +</span>
+                                    <h6>Achieved Awards</h6>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------------------- about welcome End -------------------------------------->
+
+    <!--------------------------------- Footer Start ------------------------>
+    <div id="footer">
+        <div class="container-fluid ">
+            <div class="footer justify-content-around">
+                <div class="row">
+                    <div class="details ">
+                        <div class="d-1">
+                            <h4>Solutions</h4>
+                            <a href="#">
+                                <h6>Ecommerce</h6>
+                            </a>
+                            <a href="#">
+                                <h6>Account</h6>
+                            </a>
+                            <a href="#">
+                                <h6>Wishlist</h6>
+                            </a>
+                            <a href="#">
+                                <h6>Register</h6>
+                            </a>
+                        </div>
+
+                        <div class="d-2">
+                            <h4>Company</h4>
+                            <a href="./index.html">
+                                <h6>Home</h6>
+                            </a>
+                            <a href="./about.html">
+                                <h6>About</h6>
+                            </a>
+                            <a href="#">
+                                <h6>Blog</h6>
+                            </a>
+                            <a href="./contact.html">
+                                <h6>Contact</h6>
+                            </a>
+                        </div>
+
+                        <div class="d-3">
+                            <h4>Legal</h4>
+                            <a href="#">
+                                <h6>Login</h6>
+                            </a>
+                            <a href="#">
+                                <h6>Help</h6>
+                            </a>
+                            <a href="#">
+                                <h6>Cart</h6>
+                            </a>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="footer-logo">
+                    <img src="./images/full logo.jpg" alt="">
+                    <h4>Subscribe To Our Newsletter</h4>
+                    <form action="#" class="was-validated input-group">
+                        <input type="email" name="email" class="form-control input-field" placeholder="Enter your email" required>
+                        <input type="submit" value="SUBMIT" class="btn">
+                    </form>
+                    <p>*Nulla porttitor accumsan tincidunt.</p>
+                </div>
+
+            </div>
+            <div class="footer-bottom d-flex justify-content-between">
+                <p><i class="fa-solid fa-copyright"></i> icoo - <span>2022</span></p>
+                <div class="social-icon">
+                    <a href="#"> <i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--------------------------------- Footer End ------------------------>
+
+
+
+
+    <script src="./jquery.js"></script>
+    <script src="./javascript.js"></script>
+</body>
+
+</html>
